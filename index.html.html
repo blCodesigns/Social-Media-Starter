@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Social Media Starter | BL & Co. Designs</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf5f0;--card:#fff;--soft:#f6dfe4;--rose:#c4778a;--ink:#4a3a3f;--muted:#7d6a70;--line:#ecd3da;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1619;--card:#2a2024;--soft:#3a2830;--rose:#e29bae;--ink:#f3e6ea;--muted:#c3aeb5;--line:#4a3640;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1d1619;--card:#2a2024;--soft:#3a2830;--rose:#e29bae;--ink:#f3e6ea;--muted:#c3aeb5;--line:#4a3640;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Cormorant Garamond",Georgia,serif;font-size:19px;line-height:1.55;font-weight:400}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+.script{font-family:"Great Vibes","Brush Script MT",cursive;color:var(--rose);font-weight:400}
+.hero{text-align:center;padding:56px 0 44px;background:radial-gradient(circle at 15% 0%,var(--soft),transparent 55%),radial-gradient(circle at 90% 30%,var(--soft),transparent 50%)}
+.mono{width:72px;height:72px;border-radius:50%;border:1.5px solid var(--rose);display:grid;place-items:center;margin:0 auto 14px;font-size:38px;line-height:1;padding-bottom:6px}
+.brand{letter-spacing:.22em;text-transform:uppercase;font-size:14px;color:var(--muted)}
+h1{font-weight:300;font-size:clamp(34px,8vw,54px);letter-spacing:.08em;text-transform:uppercase;margin:10px 0 6px}
+h2{font-weight:300;font-size:28px;letter-spacing:.06em;text-transform:uppercase;text-align:center;margin:0 0 6px}
+.tag{font-size:22px;font-style:italic;color:var(--muted);max-width:520px;margin:0 auto 24px}
+.btn{display:inline-block;background:var(--rose);color:#fff;text-decoration:none;padding:13px 30px;border-radius:40px;letter-spacing:.12em;text-transform:uppercase;font-size:15px;font-weight:600}
+.btn.alt{background:transparent;color:var(--rose);border:1.5px solid var(--rose);margin-left:8px}
+section{padding:42px 0}
+.sub{text-align:center;font-size:30px;margin:0 0 22px}
+.grid{display:grid;gap:18px}
+.pkgs{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 24px;position:relative}
+.card.best{border-color:var(--rose);box-shadow:0 8px 30px rgba(196,119,138,.18)}
+.badge{position:absolute;top:-13px;right:18px;background:var(--rose);color:#fff;font-size:13px;letter-spacing:.12em;text-transform:uppercase;padding:3px 14px;border-radius:20px}
+.card h3{margin:0;font-weight:300;font-size:24px;letter-spacing:.05em;text-transform:uppercase}
+.pc{color:var(--muted);font-style:italic;margin:2px 0 8px}
+.price{font-size:42px;font-weight:300;color:var(--rose);line-height:1.1}
+.price s{font-size:22px;color:var(--muted);margin-right:8px}
+.price small{font-size:15px;color:var(--muted);letter-spacing:.1em}
+ul{padding:0;margin:14px 0 0;list-style:none}
+li{padding:5px 0 5px 24px;position:relative;font-size:18px}
+li:before{content:"✿";position:absolute;left:0;color:var(--rose);font-size:14px;top:9px}
+.bf{background:var(--soft);border-radius:18px;text-align:center;padding:16px;margin-top:20px;font-size:20px}
+.addons{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:8px 24px}
+.row{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px dashed var(--line)}
+.row:last-child{border:0}
+.row b{color:var(--rose);font-weight:600;white-space:nowrap}
+.note{text-align:center;color:var(--muted);font-size:17px;margin-top:12px}
+.soft{background:var(--soft)}
+.steps{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));text-align:center}
+.steps .n{font-size:40px;line-height:1}
+.two{grid-template-columns:repeat(auto-fit,minmax(280px,1fr));font-size:17px;color:var(--muted)}
+.cta{text-align:center;padding:50px 0 36px}
+footer{text-align:center;color:var(--muted);font-size:16px;padding-bottom:40px}
+footer a{color:var(--rose);text-decoration:none}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<div class="mono script">bl</div>
+<div class="brand">BL &amp; Co. Designs</div>
+<h1>Social Media Starter</h1>
+<p class="script" style="font-size:34px;margin:0 0 10px">Content with intention</p>
+<p class="tag">Creative content. Consistent branding. Made for your business.</p>
+<a class="btn" href="#packages">See packages</a><a class="btn alt" href="#book">Get started</a>
+</div></header>
+
+<section><div class="wrap">
+<h2>Affordable content for growing brands</h2>
+<p class="note" style="font-size:20px">Posting consistently is hard when you’re busy running a business. I create beautiful, on-brand posts, carousels and Reels, so your feed looks polished without the stress.</p>
+<div class="grid steps" style="margin-top:26px">
+<div><div class="n script">1</div>Message me and tell me about your business</div>
+<div><div class="n script">2</div>We chat through your brand and content goals</div>
+<div><div class="n script">3</div>I create your content, with a round of revisions included</div>
+</div></div></section>
+
+<section class="soft" id="packages"><div class="wrap">
+<h2>Choose your package</h2><p class="sub script">Per month</p>
+<div class="grid pkgs">
+<div class="card"><h3>Starter Mini</h3><div class="pc">4 pieces of content</div>
+<div class="price"><s>R750</s>R650 <small>/ MONTH</small></div>
+<p style="font-size:17px;color:var(--muted);margin:8px 0 0">A simple, affordable introduction to a social media presence.</p>
+<ul><li>2 custom static graphic posts</li><li>1 carousel post, up to 5 slides</li><li>1 short-form Reel/video edit, up to 30 seconds, using your footage</li><li>Captions for all 4 pieces</li><li>Keyword and hashtag research</li><li>Basic content planning</li><li>Your existing brand identity, used consistently</li><li>One reasonable round of revisions per post</li></ul></div>
+<div class="card best"><span class="badge">Better value</span><h3>Starter Plus</h3><div class="pc">8 pieces of content</div>
+<div class="price"><s>R1500</s>R1250 <small>/ MONTH</small></div>
+<p style="font-size:17px;color:var(--muted);margin:8px 0 0">For a more consistent monthly content presence.</p>
+<ul><li>4 custom static graphic posts</li><li>2 carousel posts, up to 5 slides each</li><li>2 short-form Reel/video edits, up to 30 seconds each, using your footage</li><li>Captions for all 8 pieces</li><li>Keyword and hashtag research</li><li>Basic monthly content planning</li><li>Your existing brand identity, used consistently</li><li>One reasonable round of revisions per post</li></ul></div>
+</div>
+<div class="bf"><span class="script" style="font-size:32px">Black Friday Special</span><br>Starter Mini R650 · Starter Plus R1250 · Brand Discovery R750</div>
+<p class="note">Need something bigger? Message me for a personalised quote.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>Need a little extra?</h2><p class="sub script">Optional add-ons</p>
+<div class="addons">
+<div class="row"><span>Additional static graphic post</span><b>R120</b></div>
+<div class="row"><span>Additional carousel, up to 5 slides</span><b>R320</b></div>
+<div class="row"><span>Additional simple Reel edit using your footage</span><b>R290</b></div>
+<div class="row"><span>Scheduling and publishing of the agreed monthly content</span><b>R30</b></div>
+<div class="row"><span>Brand Discovery Workbook &amp; Service</span><b>R950</b></div>
+</div>
+<p class="note">Each deliverable includes one round of minor revisions within the original approved brief. Additional minor revision rounds are R90.</p>
+</div></section>
+
+<section class="soft"><div class="wrap">
+<h2>Your brand is more than a logo</h2><p class="sub script">There’s more…</p>
+<p style="text-align:center">Your brand is your identity: the personality, values and story behind your business. Every package includes a basic brand consultation so I understand your business, your audience and your content goals.</p>
+<p style="text-align:center">Want to go deeper? The <b>Brand Discovery Workbook</b> is a guided process to clarify your brand identity, values, personality, tone of voice, audience and vision. Return it to me and we’ll refine your brand story and use it to shape the content we create together.</p>
+<p class="note">A brand discovery service to support content creation. It isn’t a full brand or marketing strategy, and doesn’t include in-depth competitor research or market analysis.</p>
+</div></section>
+
+<section><div class="wrap">
+<h2>A few things to note</h2><p class="sub script">Good to know</p>
+<div class="grid two">
+<ul><li>Packages cover content creation, not full social media account management</li><li>You supply your logo, brand assets, product info, photos and video footage</li><li>Reels are basic edits of your footage, not professional filming or advanced video production</li><li>Scheduling, publishing, community management and paid ads are excluded unless agreed</li></ul>
+<ul><li>One reasonable round of revisions per post is included</li><li>Extra revisions or work outside the agreed scope may cost extra</li><li>Content is made for the agreed platform(s); adaptations are agreed in advance</li><li>No specific reach, engagement, follower growth or sales results are guaranteed</li></ul>
+</div></div></section>
+
+<section class="soft cta" id="book"><div class="wrap">
+<h2>Ready to give your brand an identity?</h2>
+<p class="script" style="font-size:32px;margin:6px 0 22px">Let’s create a personality that brings your brand to life.</p>
+<a class="btn" href="https://wa.me/27632947735">Message me</a><a class="btn alt" href="mailto:hellobl.Co@outlook.com">Email</a>
+</div></section>
+
+<footer><div class="wrap">
+<div class="brand">BL &amp; Co. Designs · Digital Content &amp; Aesthetics Creator</div>
+<p>063 294 7735 · <a href="mailto:hellobl.Co@outlook.com">hellobl.Co@outlook.com</a><br>@bl_codesigns · @bl.Codesigns</p>
+</div></footer>
+</body>
+</html>
